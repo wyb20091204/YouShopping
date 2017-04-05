@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  YouShopping
+//
+//  Created by lanou3g on 16/7/14.
+//  Copyright © 2016年 ooiaeiig. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#import <AFNetworking.h>
+#import "RequestUrl.h"
+#import "NetWorkRequest.h"
+#import <UIImageView+AFNetworking.h>
+#import <EMSDKFull.h>
+#import <HyphenateFullSDK/EMSDKFull.h>
+#import "User.h"
+#import "userDefaults.h"
+
+
+
+#endif /* PrefixHeader_pch */

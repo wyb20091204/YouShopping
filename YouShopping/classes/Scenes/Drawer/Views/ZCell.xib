@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="zcell" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="ZCell">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="穿衣指数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDU-eo-2hQ">
+                        <rect key="frame" x="5" y="5" width="64" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="AQb-7o-ayR"/>
+                            <constraint firstAttribute="width" constant="64" id="AXf-9W-A8D"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ebV-Xl-9ML"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ebV-Xl-9ML"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="建议着薄外套、开衫牛仔衫裤等服装。年老体弱者应适当添加衣物，宜着夹克衫、薄毛衣等" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKV-nM-RSz">
+                        <rect key="frame" x="10" y="26" width="294" height="73"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="p28-Vr-P2p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="较舒适" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rd-HJ-9oe">
+                        <rect key="frame" x="254" y="5" width="50" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="5We-9R-IkU"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="fJ4-Od-r4o"/>
+                            <constraint firstAttribute="height" constant="21" id="vQV-zA-41r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5Rd-HJ-9oe" secondAttribute="trailing" constant="10" id="1cO-QK-TVb"/>
+                    <constraint firstItem="5Rd-HJ-9oe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="9Lo-ma-cvh"/>
+                    <constraint firstItem="JDU-eo-2hQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="We5-Ev-37h"/>
+                    <constraint firstItem="cKV-nM-RSz" firstAttribute="top" secondItem="5Rd-HJ-9oe" secondAttribute="bottom" id="YZ1-TN-5gl"/>
+                    <constraint firstItem="cKV-nM-RSz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cLd-yt-dg7"/>
+                    <constraint firstItem="JDU-eo-2hQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="kAX-Z9-cSG"/>
+                    <constraint firstAttribute="bottom" secondItem="cKV-nM-RSz" secondAttribute="bottom" id="nZi-w4-kLp"/>
+                    <constraint firstAttribute="trailing" secondItem="cKV-nM-RSz" secondAttribute="trailing" constant="10" id="zrT-0Y-W1M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="des" destination="cKV-nM-RSz" id="dO6-EK-DRk"/>
+                <outlet property="tipt" destination="JDU-eo-2hQ" id="hlh-L0-tEc"/>
+                <outlet property="zs" destination="5Rd-HJ-9oe" id="tCK-DW-Sf8"/>
+            </connections>
+            <point key="canvasLocation" x="362" y="410"/>
+        </tableViewCell>
+    </objects>
+</document>
