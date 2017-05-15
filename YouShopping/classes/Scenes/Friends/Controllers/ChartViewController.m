@@ -426,6 +426,20 @@
 
 - (void)keyboardWasShown:(NSNotification*)aNotification{
     
+    
+//    CGRect keyboardFrame = [aNotification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+//    CGFloat height = keyboardFrame.origin.y;
+//    CGFloat textField_maxY = CGRectGetMaxY(_currentCell.frame);
+//    CGFloat space = - self.tableView.contentOffset.y + textField_maxY;
+//    CGFloat transformY = height - space;
+//    if (transformY < 0) {
+//        CGRect frame = self.view.frame;
+//        frame.origin.y = transformY ;
+//        self.view.frame = frame;
+//    }
+    
+    
+    
     //键盘高度
     CGRect keyBoardFrame = [[[aNotification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
     //表视图滚动至底部。
